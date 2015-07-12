@@ -195,7 +195,7 @@
               "https://github.com/OzGitele/linuxproject/tree/master/Script/templateScript.sh"
 
             ],
-            "commandToExecute": "./templateScript.sh"
+            "commandToExecute": "sh templateScript.sh"
           }
         }
     }
