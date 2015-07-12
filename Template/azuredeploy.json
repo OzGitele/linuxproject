@@ -173,27 +173,30 @@
             }
           ]
         }
-      },
-      {
-          "type": "Microsoft.Compute/virtualMachines/extensions",
-          "name": "MyUbuntuVM/installscrap",
-          "apiVersion": "2015-05-01-preview",
-          "location": "West Europe",
-      
-            "properties":
-            {
-              "publisher": "Microsoft.OSTCExtensions",
-              "type": "CustomScriptForLinux",
-              "typeHandlerVersion": "1.2",
-              "settings": {
+      }
+    },
+    {
+      "type": "Microsoft.Compute/virtualMachines/extensions",
+      "name": "[concat(variables('vmName'),'/installscrapy')]",
+      "apiVersion": "2015-05-01-preview",
+      "location": "West Europe",
+      "dependsOn": [
+                "[concat('Microsoft.Compute/virtualMachines/', variables('vmName'))]"
+            ],
 
-                "fileUris": [
-                  "https://github.com/OzGitele/linuxproject/tree/master/Script/templateScript.sh"
+        "properties":
+        {
+          "publisher": "Microsoft.OSTCExtensions",
+          "type": "CustomScriptForLinux",
+          "typeHandlerVersion": "1.2",
+          "settings": {
 
-                ],
-                "commandToExecute": "./templateScript.sh"
-              }
-            }
+            "fileUris": [
+              "https://github.com/OzGitele/linuxproject/tree/master/Script/templateScript.sh"
+
+            ],
+            "commandToExecute": "./templateScript.sh"
+          }
         }
     }
   ]
