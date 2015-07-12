@@ -1,13 +1,13 @@
-# Very simple deployment of an Linux VM
+# Deployment of a Linux VM for MMO frontend
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FOzGitele%2Flinuxproject%2Fmaster%2FTemplate%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a><a  target="_blank">
 
 
-Built by: [coreysa](https://github.com/coreysa)
 
-This template allows you to deploy a simple Linux VM using a few different options for the Ubuntu Linux version, using the latest patched version. This will deploy in West US on a D1 VM Size.
+
+This template allows you to deploy a simple Linux VM using a few different options for the Ubuntu Linux version, using the latest patched version. This will deploy in West Europe on a D1 VM Size.
 
 Below are the parameters that the template expects: 
 
