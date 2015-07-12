@@ -178,14 +178,10 @@
     },
     {
       "type": "Microsoft.Compute/virtualMachines/extensions",
-      "name": "[concat(parameters('newStorageAccountName'),'/installscrapy')]",
+      "name": "installscrapy",
       "apiVersion": "2015-05-01-preview",
       "location": "West Europe", 
-             "dependsOn": [ 
-               "[concat('Microsoft.Storage/storageAccounts/', parameters('newStorageAccountName'))]" 
-          ], 
-
-      
+             
         "properties":
         {
           "publisher": "Microsoft.OSTCExtensions",
