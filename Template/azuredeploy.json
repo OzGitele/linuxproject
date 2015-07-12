@@ -176,7 +176,7 @@
       },
       {
           "type": "Microsoft.Compute/virtualMachines/extensions",
-          "name": "MyUbuntuVM/installscrapy",
+          "name": "MyUbuntuVM/installscrap",
           "apiVersion": "2015-05-01-preview",
           "location": "West Europe",
       
