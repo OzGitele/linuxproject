@@ -178,27 +178,32 @@
     },
     {
       "type": "Microsoft.Compute/virtualMachines/extensions",
-      "name": "Script/templateScript.sh",
+      "name": "[concat(parameters('vmName'),'/installscrapy')]",
       "apiVersion": "2015-05-01-preview",
       "location": "West Europe",
-      "properties": {
+      "dependsOn": [
+        "[concat('Microsoft.Compute/virtualMachines/', parameters('vmName'))]"
+        ],
+        "properties"
+        :
+        {
 
 
-        "publisher": "Microsoft.OSTCExtensions",
-        "type": "CustomScriptForLinux",
-        "typeHandlerVersion": "1.2",
-        "settings": {
+          "publisher": "Microsoft.OSTCExtensions",
+          "type": "CustomScriptForLinux",
+          "typeHandlerVersion": "1.2",
+          "settings": {
 
-          "fileUris": [
-            "https://github.com/OzGitele/linuxproject/tree/master/Script/"
-            
+            "fileUris": [
+              "https://github.com/OzGitele/linuxproject/tree/master/Script/templateScript.sh"
 
 
-          ],
-          "commandToExecute": "./templateScript.sh"
 
+            ],
+            "commandToExecute": "./templateScript.sh"
+
+          }
         }
-      }
     }
   ]
 }
