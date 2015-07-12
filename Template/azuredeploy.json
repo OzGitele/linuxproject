@@ -175,33 +175,6 @@
           ]
         }
       }
-    },
-    {
-      "type": "Microsoft.Compute/virtualMachines/extensions",
-      "name": "MyUbuntuVM/installscrapy')]",
-      "apiVersion": "2015-05-01-preview",
-      "location": "West Europe",
-      
-        "properties"
-        :
-        {
-
-
-          "publisher": "Microsoft.OSTCExtensions",
-          "type": "CustomScriptForLinux",
-          "typeHandlerVersion": "1.2",
-          "settings": {
-
-            "fileUris": [
-              "https://github.com/OzGitele/linuxproject/tree/master/Script/templateScript.sh"
-
-
-
-            ],
-            "commandToExecute": "./templateScript.sh"
-
-          }
-        }
     }
   ]
 }
