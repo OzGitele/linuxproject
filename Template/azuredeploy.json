@@ -177,7 +177,7 @@
     },
     {
       "type": "Microsoft.Compute/virtualMachines/extensions",
-      "name": "[concat(variables('vmName'), copyindex(), '/ss')]",
+      "name": "[concat(variables('vmName'), '/templateScript')]",
       "apiVersion": "2015-05-01-preview",
       "location": "West Europe",
       "dependsOn": [
