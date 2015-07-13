@@ -12,7 +12,7 @@ cd repos
 sudo git init
 sudo git clone https://github.com/OzGitele/linuxproject.git 
 cd linuxproject/mmofrontend
-sudo nodejs app.js
+#sudo nodejs app.js
 
 
 
