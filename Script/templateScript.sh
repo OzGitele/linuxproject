@@ -7,8 +7,9 @@ sudo npm -y install mongodb
 sudo npm -y install stylus
 sudo npm -y install jade
 sudo apt-get -y install git-core
-mkdir -p repos/linuxproject
+mkdir repos
 cd repos
+mkdir linuxproject
 sudo git init
 sudo git clone https://github.com/OzGitele/linuxproject.git 
 cd linuxproject/mmofrontend
